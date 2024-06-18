@@ -1,0 +1,397 @@
+:root {
+  --main-bg-color: #000000; /* Значение по умолчанию */
+}
+
+
+
+ 
+Body 
+{
+    margin:0;
+    background:#fffdf9; 
+}
+
+
+
+ 
+.spell-card p 
+{
+    text-shadow:#000 1px 1px 6px; 
+}
+
+
+
+ 
+main 
+{
+    width:737px;
+    position:relative;
+    margin:auto; 
+}
+
+
+
+ 
+.spell-card 
+{
+    outline:#fff 1px solid; 
+}
+
+
+
+ 
+.spell-back 
+{
+    border-top:var(--main-bg-color) 12px solid !important;
+    margin-top:-2px;
+    outline:var(--main-bg-color) 10px solid; 
+}
+
+
+
+ 
+.spell-card, .spell-back 
+{
+    height:325px;
+    width:219px;
+    text-align:center;
+    position:relative;
+    border:var(--main-bg-color) 10px solid;
+    display:inline-block;
+    place-items:center;
+    border-bottom:0;
+    margin-bottom:-3px;
+    background:var(--main-bg-color); 
+}
+
+
+
+ 
+.empty-card 
+{
+    height:345px;
+    width:239px;
+    display:inline-block; 
+}
+
+
+
+ 
+table 
+{
+    border-collapse:collapse;
+    border-radius:10px;
+    background:#fff; 
+}
+
+
+
+ 
+.spell-card td 
+{
+    position:relative;
+    padding:0;
+    max-height:250px; 
+}
+
+
+
+ 
+.spell-card td p 
+{
+    height:100%;
+    position:absolute;
+    margin:auto;
+    font-size:209px;
+    top:0;
+    opacity:.2;
+    font-family:'MartaBold';
+    color:var(--main-bg-color);
+    width:100%; 
+}
+
+
+
+ 
+h2 
+{
+    margin:0;
+    font-size:7px;
+    color:#b1b1b1;
+    font-family:'MartaBold'; 
+}
+
+
+
+ 
+h2 span 
+{
+    font-size:13px !important;
+    margin-right:5px;
+    color:black; 
+}
+
+
+
+ 
+.name 
+{
+    padding:1px !important;
+    height:40px !important; 
+}
+
+
+
+ 
+.ab, .name 
+{
+    border-bottom:1px  var(--main-bg-color) solid; 
+}
+
+
+
+ 
+.a td:first-child, .ab td:first-child 
+{
+    border-right:1px  var(--main-bg-color) solid; 
+}
+
+
+
+ 
+.c 
+{
+    font-family:ForumRegular;
+    font-size:6px; 
+}
+
+
+
+ 
+.description 
+{
+    text-align:left;
+    padding:5px;
+    overflow:hidden;
+    height:260px;
+    font-family:'ForumRegular';
+    padding-top:0;
+    border-top:5px  var(--main-bg-color) solid; 
+}
+
+
+
+ 
+.school 
+{
+    text-align:left;
+    position:absolute;
+    bottom:0;
+    width:-webkit-fill-available;
+    font-family:'MartaBold';
+    font-size:8px;
+    border-top:var(--main-bg-color) 0px solid;
+    border-bottom:var(--main-bg-color) 2px solid;
+    background:var(--main-bg-color); 
+}
+
+
+
+ 
+.page-break 
+{
+    padding:10px;
+    page-break-before:always;
+    margin-top:10px; 
+}
+
+
+
+ 
+.spell-back td 
+{
+    width:33%;
+    height:50%; 
+}
+
+
+
+ 
+.spell-back table 
+{
+    width:100%;
+    height:100%; 
+}
+
+
+
+ 
+.spell-back p 
+{
+    width:85%;
+    font-family:ForumRegular;
+    font-size:8px;
+    vertical-align:top;
+    margin:auto;
+    max-height:100px;
+    font-weight:bolder;
+    position:relative; 
+}
+
+
+
+ 
+.class-img 
+{
+    position:absolute;
+    opacity:.3;
+    top:110px;
+    left:0;
+    width:219px;
+    height:160px !important; 
+}
+
+
+
+ 
+.icon-top td, .icon-bottom td 
+{
+    outline:10px var(--main-bg-color) solid;
+    background:#fff;
+    outline-offset:-5px;
+    position:relative;
+    padding:20px 0; 
+}
+
+
+
+ 
+.icon-top td 
+{
+    border-radius:0 0 40px 40px;
+    height:60px; 
+}
+
+
+
+ 
+.icon-bottom td 
+{
+    border-radius:40px 40px 0 0; 
+}
+
+
+
+ 
+.spell-back td img 
+{
+    opacity:0.2;
+    position:absolute;
+    left:15px;
+    height:100%;
+    width:45px;
+    top:0; 
+}
+
+
+
+ 
+.spell-back .name 
+{
+    height:45px !important; 
+}
+
+
+
+ 
+.spell-list * 
+{
+    font-size:12px; 
+}
+
+
+
+ 
+.spell-item 
+{
+    width:30%;
+    padding:0px 20px;
+    font-family:MartaItalic;
+    display:inline-block; 
+}
+
+
+
+ 
+.classes 
+{
+    height:0 !important;
+    width:0 !important;
+    opacity:0 !important;
+    position:absolute !important;
+    display:none !important; 
+}
+
+.unmatching {
+    display: none !important;
+}
+
+
+.minimised{
+    height: 20px;
+    overflow: hidden;
+}
+
+#toggleHeader {
+    position: fixed;
+    top:0;
+    right: 0;
+
+}
+
+ 
+@media print 
+{ 
+}
+
+
+
+ 
+@page 
+{
+    size:auto;
+    margin:0; 
+}
+
+
+
+ 
+@font-face 
+{
+    font-family:"ForumRegular";
+    src:url("../src/fonts/ForumRegular.ttf") format("truetype");
+    font-style:normal;
+    font-weight:normal; 
+}
+
+
+
+ 
+@font-face 
+{
+    font-family:"MartaBold";
+    src:url("../src/fonts/MartaBold.otf") format("truetype");
+    font-style:normal;
+    font-weight:normal; 
+}
+
+
+
+ 
+@font-face 
+{
+    font-family:"MartaItalic";
+    src:url("../src/fonts/MartaItalic.otf") format("truetype");
+    font-style:normal;
+    font-weight:normal; 
+}
